@@ -33,7 +33,7 @@ def predict(inning, game_id):
 
     # print(df_home)
 
-    df_main = pd.read_csv("../Score_prediction_dataset_25th_August_TS_3seas.csv")
+    df_main = pd.read_csv("Score_prediction_dataset_25th_August_TS_3seas.csv")
     df_main = df_main.drop(columns=['Opp_LOB'])
     df_main = df_main[(df_main['Inning'] <= inning)]
 
